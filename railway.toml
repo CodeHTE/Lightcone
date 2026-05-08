@@ -1,17 +1,10 @@
-[build.builder]
-name = "python"
+[build]
+builder = "RAILPACK"
 
-[build.command]
-command = "pip install -r requirements.txt"
-
-[deploy.startCommand]
-command = "python wsgi.py"
-
-[deploy.healthcheckPath]
-path = "/"
-
-[deploy.healthcheckPort]
-port = 5000
+[deploy]
+startCommand = "python wsgi.py"
+healthcheckPath = "/"
+healthcheckPort = 5000
 
 [environment]
 PORT = "5000"
