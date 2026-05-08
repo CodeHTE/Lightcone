@@ -1,0 +1,18 @@
+[build.builder]
+name = "python"
+
+[build.command]
+command = "pip install -r requirements.txt"
+
+[deploy.startCommand]
+command = "python wsgi.py"
+
+[deploy.healthcheckPath]
+path = "/"
+
+[deploy.healthcheckPort]
+port = 5000
+
+[environment]
+PORT = "5000"
+SECRET_KEY = "railway-collaborative-canvas-secret-key-2024"
