@@ -1,8 +1,7 @@
 [build]
-builder = "RAILPACK"
+builder = "DOCKERFILE"
 
 [deploy]
-startCommand = "python wsgi.py"
 healthcheckPath = "/"
 healthcheckPort = 5000
 
