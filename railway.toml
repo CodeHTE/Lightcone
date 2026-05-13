@@ -2,7 +2,7 @@
 builder = "DOCKERFILE"
 
 [deploy]
-healthcheckPath = "/"
+healthcheckPath = "/health"
 healthcheckPort = 5000
 
 [environment]

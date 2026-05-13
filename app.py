@@ -105,6 +105,11 @@ def delete_connection_from_db(conn_id):
     conn.commit()
     conn.close()
 
+# ---------- 健康检查路由 ----------
+@app.route('/health')
+def health():
+    return 'OK', 200
+
 # ---------- 路由 ----------
 @app.route('/')
 def index():
